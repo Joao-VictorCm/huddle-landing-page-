@@ -1,0 +1,20 @@
+@media(max-width: 530px){
+    .body{
+        background: url(../images/bg-mobile.svg) no-repeat hsl(300, 69%, 71%);
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+        
+    }
+
+    .section{
+     margin: 20px;
+     
+    }
+
+    .footer{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-left: 50%;
+    }
+  }

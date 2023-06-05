@@ -1,0 +1,124 @@
+/*
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    - Violet: hsl(257, 40%, 49%)
+    - Soft Magenta: hsl(300, 69%, 71%)*/
+
+
+body {
+    background: url(../images/bg-desktop.svg) no-repeat hsl(300, 69%, 71%);
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    position: relative;
+    display: grid;
+    grid-template-areas: "header header"
+        "section section"
+        "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    
+
+}
+
+.header {
+    grid-area: header;
+    margin: 30px;
+    display: flex;
+    align-items: center ;
+}
+
+.icone-logo{
+    text-decoration: none;
+}
+
+.title{
+    font-family: "Poppins";
+    font-weight: 600;
+    padding: 10px;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    display: grid;
+    grid-area: section;
+    align-items: center;
+    gap: 50px;
+    margin: 25px 50px 25px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(666px, 1fr));
+}
+
+
+.text {
+    margin-right: 50px;
+    color: aliceblue;
+}
+
+.text h2 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.text p {
+    font-family: "Poppins";
+    font-weight: 400;
+
+}
+
+.section .register {
+    width: 200px;
+    height: 60px;
+    border-radius: 55px;
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 20px 0px #000000;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: hsl(257, 40%, 49%);
+}
+
+.section .register:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer .social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+    gap: 25px;
+}
+
+.contorno {
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: hsl(257, 40%, 49%);
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    border: 1px solid #eee;
+}
+
+.contorno i {
+    color: #eee;
+}
+
+
+.contorno i:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.contorno:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+
+}
